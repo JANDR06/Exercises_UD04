@@ -6,8 +6,6 @@ order. For that, use the insertion sort algorithm.
 
 package exercises;
 
-import java.sql.SQLOutput;
-
 public class Exercise4 {
     public static void main(String[] args) {
 
@@ -20,6 +18,7 @@ public class Exercise4 {
         showMatrix(persons);
     }
 
+    // Insertion method that sorts the two-dimensional array by people who are taller to people who are shorter
     public static void insertion(String[][] array){
         String clave, claveTwo;
 
@@ -43,6 +42,7 @@ public class Exercise4 {
         }
     }
 
+    // Method to view the vector showing only the names
     public static void showMatrix(String[][] matrix) {
 
         int top = 1;

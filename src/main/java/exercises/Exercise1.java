@@ -14,13 +14,17 @@ public class Exercise1 {
         String[] strings = {"MARIA", "JUAN", "LAURA", "DIEGO", "ANA", "ALEJANDRO", "PATRICIA", "MANUEL", "CLARA", "JOSE",
                 "ANDRES", "SANDRA", "CARMEN", "RAUL", "VERONICA", "LUCAS", "JAVIER", "CRISTOBAL", "SANTIAGO", "LUIS"};
 
+        // Exercise 1
         selection(strings);
+        // Exercise 2
         Exercise2.mergeSort(strings, 0, strings.length);
+        // Exercise 3
         Exercise3.quickSort(strings, 0, strings.length - 1);
 
         System.out.println(Arrays.toString(strings));
     }
 
+    // Selection method that orders the vector in ascending order (A-Z)
     public static void selection(String[] array){
         int posMin;
 
@@ -38,6 +42,7 @@ public class Exercise1 {
 
     }
 
+    // Swap method to exchange the strings
     public static void swap(String[] array, int i, int j){
         String aux = array[j];
         array[j] = array[i];

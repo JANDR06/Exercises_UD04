@@ -5,6 +5,8 @@
 package exercises;
 
 public class Exercise2 {
+
+    // MergeSort method that orders the vector in ascending order (A-Z)
     public static void mergeSort(String[] v, int start, int size) {
         int longitud1, longitud2;
 
@@ -18,6 +20,7 @@ public class Exercise2 {
         }
     }
 
+    // Merge method that orders the vector in ascending order (A-Z)
     private static void merge(String[] v, int start, int longitud1, int longitud2) {
         String[] buffer = new String[longitud1 + longitud2];
         int i1 = 0, i2 = 0, iBuffer = 0;

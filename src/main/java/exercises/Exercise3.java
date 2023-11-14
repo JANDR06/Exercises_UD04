@@ -5,6 +5,8 @@
 package exercises;
 
 public class Exercise3 {
+
+    // QuickSort method that orders the vector in ascending order (A-Z)
     public static void quickSort(String[] v, int left, int right) {
         String pivot = v[(left + right) / 2];
 
