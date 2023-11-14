@@ -6,13 +6,17 @@ order. For that, use the insertion sort algorithm.
 
 package exercises;
 
+import java.sql.SQLOutput;
+
 public class Exercise4 {
     public static void main(String[] args) {
 
         String[][] persons = {{"MARIA", "1,47"}, {"JUAN", "1,91"}, {"LAURA", "1,63"}, {"DIEGO", "1,87"}, {"ANA", "1,22"},
-                {"ALEJANDRO", "1,75"}, {"PATRICIA", "1,74"}, {"MANUEL", "1,90"}, {"CLARA", "1,89"}, {"JOSE", "1,41"}};
+                {"ALEJANDRO", "1,75"}, {"PATRICIA", "1,74"}, {"MANUEL", "1,90"}, {"CLARA", "1,89"}, {"JOSE", "1,41"},
+                {"SANDRA", "1,55"}, {"CARMEN", "1,77"}, {"PEPE", "1,12"}, {"SERGIO", "1, 66"}, {"ESTEBAN", "1,69"}};
 
         insertion(persons);
+        System.out.println("* ARRAY ORDERED BY HEIGHT *");
         showMatrix(persons);
     }
 
@@ -41,11 +45,17 @@ public class Exercise4 {
 
     public static void showMatrix(String[][] matrix) {
 
+        int top = 1;
+
         for (String[] strings : matrix) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                System.out.print(strings[j] + " ");
+
+            if (top < 10) {
+                System.out.print( " " + top + " -----> " + strings[0]);
+            } else {
+                System.out.print(top + " -----> " + strings[0]);
             }
 
+            top++;
             System.out.println();
         }
     }
