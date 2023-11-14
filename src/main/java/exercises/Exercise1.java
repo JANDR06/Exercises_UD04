@@ -11,7 +11,8 @@ import java.util.Arrays;
 public class Exercise1 {
     public static void main(String[] args) {
 
-        String[] strings = {"MARIA", "JUAN", "LAURA", "DIEGO", "ANA", "ALEJANDRO", "PATRICIA", "MANUEL", "CLARA", "JOSE"};
+        String[] strings = {"MARIA", "JUAN", "LAURA", "DIEGO", "ANA", "ALEJANDRO", "PATRICIA", "MANUEL", "CLARA", "JOSE",
+                "ANDRES", "SANDRA", "CARMEN", "RAUL", "VERONICA", "LUCAS", "JAVIER", "CRISTOBAL", "SANTIAGO", "LUIS"};
 
         selection(strings);
         Exercise2.mergeSort(strings, 0, strings.length);

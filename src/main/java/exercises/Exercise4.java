@@ -17,19 +17,25 @@ public class Exercise4 {
     }
 
     public static void insertion(String[][] array){
-        String clave;
+        String clave, claveTwo;
 
-        for (int i = 1; i < array[0].length; i++) {
+        for (int i = 1; i < array.length; i++) {
+            for (int k = 1; k < array[0].length; k++) {
 
-            clave = array[0][i];
-            int j = i - 1;
+                clave = array[i][1];
+                claveTwo = array[i][0];
+                int j = i - 1;
 
-            while (j >= 0 && array[0][j].compareTo(clave) > 0){
-                array[0][j + 1] = array[0][j];
-                j--;
+                while (j >= 0 && array[j][1].compareTo(clave) < 0){
+                    array[j + 1][1] = array[j][1];
+                    array[j + 1][0] = array[j][0];
+
+                    j--;
+                }
+
+                array[j + 1][1] = clave;
+                array[j + 1][0] = claveTwo;
             }
-
-            array[0][j + 1] = clave;
         }
     }
 
